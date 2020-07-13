@@ -1,0 +1,29 @@
+body{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+li{
+    list-style: none;
+}
+li.fields{
+    margin: 0;
+    padding: 1em 0;
+}
+li.title{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    /* background: #e3e3e3; */
+    background : rgb(11, 218, 218);
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white;
+}
+.hide{
+    display: none;
+}
+.gender{
+    text-align: center;
+}

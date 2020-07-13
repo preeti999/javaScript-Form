@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabbed form project</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/animation.js" type="text/javascript"></script>
+        <script src="js/validation.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form name="myform" onsubmit="return validateform()">
+            <h1>Basic Form</h1>
+        <ul>
+            <li class="title">Who are you?</li>
+            <li class="fields">
+                <label>*First Name</label> <br/>
+                <input id="first_name" class="req" type="text"><br/>
+                <label>Middle Name</label> <br/>
+                <input id="middle_name" type="text"><br/>
+                <label>Last Name</label> <br/>
+                <input id="last_name" type="text"><br/>
+                <label>*Email</label> <br/>
+                <input id="email" class="req" type="text"><br/><br>
+
+                <lable class="gender">Gender</lable><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+            </li>
+
+            <li class="title">Where do you live?</li>
+            <li class="fields">
+                <label>City :</label><br/>
+                <input id="city" type="text"> <br/>
+                <label>*State :</label><br/>
+                <input type="text" id="state" class="req"> <br/>
+                <lable>Country :</lable> <br/>
+                <input type="text" id="Country"><br/>
+            </li>
+
+            <li class="title">What are you doing?</li>
+            <li class="fields">
+                <label>Education</label><br>
+                <select name="education" id="education">
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="degree">Degree</option>
+                    <option value="master">Master</option>
+                  </select><br><br>
+
+                <label>*Occupation</label><br/>
+                <input id="occupation" class="req" type="text" placeholder="Student"></br>
+                <label>Company</label><br/>
+                <input type="text" id="Company"><br/>
+                <lable>Company Location</lable><br/>
+                <input type="text" id="location"><br/>
+            </li><br>
+            <input type="submit" value="Submit form">
+        </ul>
+                
+        </form>
+    </body>
+</html>
